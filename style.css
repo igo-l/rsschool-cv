@@ -1,0 +1,8 @@
+body {
+    background: rgb(112, 112, 112);
+    color: #000;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
