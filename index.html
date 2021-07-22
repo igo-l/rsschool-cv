@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Lagutin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbox">
+            <main>
+                <header>
+                    <img class="myphoto" src="./images/ph_il.jpg" alt="LagutinIgor">
+                  <div class="titultext">
+                      <h1> IGOR LAGUTIN </h1>
+                      Front-end Developer
+                    </div>
+                    <hr>
+                </header>
+                <section>
+                    <h2>Contacts:</h2>
+                    <ul style="line-height:2em;">
+                        <li><b>Address: </b>Gomel, Republic of Belarus</li>
+                        <li><b>Phone: </b> <a href="tel:+375-29-332-58-60">+375-29-332-58-60</a></li>
+                        <li><b>E-mail: </b><a href="mailto:igolllf@gmail.com"> igolllf@gmail.com</a></li>
+                        <li><b>GitHub: </b> <a href="https://github.com/igo-l"> https://github.com/igo-l</a></li>
+                    </ul>
+                </section>
+                <div class="grblock">
+                    <h3>About me:</h3>
+                    <p>I was engaged in self-study, made my own projects.
+                        Developed ASP.NET projects with Microsoft SQL Server.
+                        My goal is to learn everything new and interesting.
+                        I am passionate and fast learning. I want to become a full stack developer.</p>
+                </div>
+                <div class="grblock">
+                <article>
+                    <h3>Skills:</h3>
+                    <ul>
+                        <li>C, C++, C#, ASP .Net</li>
+                        <li>Microsoft SQL Server</li>
+                        <li>HTML/CSS</li>
+                        <li>Windows OS, Linux(Ubuntu), Android</li>
+                    </ul>
+                </article>
+                </div>
+                <div class="grblock">
+                    <h3>Code Example:</h3>
+                </div>
+                    <pre>
+                        <code class="code">
+// (I'm just learning)  Narcissistic Numbers
+function narcissistic(value) {
+  let x = 0
+  let y = 0
+  if (value > 9 ){
+    x = value.toString().split('')
+    for(let i=0; i &lt; x.length; i++){
+      y += Math.pow(Number(x[i]), x.length)
+    }
+     if (y === value){
+       return true
+     } else {
+       return false
+     }
+   } else {
+     return true
+   }
+}
+                        </code>
+                        </pre>
+                <div class="grblock">
+                    <h3>Experience:</h3>
+                    <p>I have worked on several small projects.</p>
+
+                </div>
+                <div class="grblock">
+                    <h3>Education:</h3>
+                    <p>Sukhoi State Technical University of Gomel (electronic engineer, software engineer).
+                        <br>Internet courses, Youtube courses and video.</p>
+                </div>
+                <div class="grblock">
+                    <h3>English:</h3>
+                    <p>A2 English level. I studied at school in English classes. I got level-placed at the university.
+                        I practice a lot every day by reading and reviewing materials in English.
+                    </p>
+                </div>
+            </main>
+            <hr>
+            <footer class="footer">
+            <div>
+                <a href="https://rs.school/js/"><img class="rslogo" src="./images/rssl.png" alt="rsSchool logo"></a>
+                <a href="https://github.com/igo-l"><img class="gitlogo" src="./images/ghl.png" alt="Github"></a>
+            </div>
+            <hr>
+                <div style="text-align:center;">В© Copyright 2021 by Igor Lagutin</div>
+            </footer>
+    </div>
+</body>
+</html>
