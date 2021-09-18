@@ -6,96 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igor Lagutin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <div class="mainbox">
-            <main>
-                <header>
-                    <img class="myphoto" src="./images/ph_il.jpg" alt="IgorLagutin">
-                  <div class="titultext">
-                      <h1> IGOR LAGUTIN </h1>
-                      Front-end Developer
-                    </div>
-                    <hr>
-                </header>
-                <section>
-                    <h2>Contacts:</h2>
-                    <ul style="line-height:2em;">
-                        <li><b>Address: </b>Gomel, Republic of Belarus</li>
-                        <li><b>Phone: </b> <a href="tel:+375-29-332-58-60">+375-29-332-58-60</a></li>
-                        <li><b>E-mail: </b><a href="mailto:igolllf@gmail.com"> igolllf@gmail.com</a></li>
-                        <li><b>GitHub: </b> <a href="https://github.com/igo-l"> https://github.com/igo-l</a></li>
-                    </ul>
-                </section>
-                <div class="grblock">
-                    <h3>About me:</h3>
-                    <p>I was engaged in self-study, made my own projects.
-                        Developed ASP.NET projects with Microsoft SQL Server.
-                        My goal is to learn everything new and interesting.
-                        I am passionate and fast learning. I want to become a full stack developer.</p>
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <ul class="desktop-menu">
+                    <li class="nav-list-item"><a href="#contacts">Contacts</a></li>
+                    <li class="nav-list-item"><a href="#about">About me</a></li>
+                    <li class="nav-list-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-list-item"><a href="#education">Education</a></li>
+                    <li class="nav-list-item"><a href="#experience">Experience</a></li>
+                </ul>
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <li class="nav-list-item"><a href="#contacts">Contacts</a></li>
+                    <li class="nav-list-item"><a href="#about">About me</a></li>
+                    <li class="nav-list-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-list-item"><a href="#education">Education</a></li>
+                    <li class="nav-list-item"><a href="#experience">Experience</a></li>
+                  </ul>
                 </div>
-                <div class="grblock">
-                <article>
-                    <h3>Skills:</h3>
-                    <ul>
-                        <li>C, C++, C#, ASP .Net</li>
-                        <li>Microsoft SQL Server</li>
-                        <li>HTML/CSS</li>
-                        <li>Windows OS, Linux(Ubuntu), Android</li>
-                    </ul>
-                </article>
-                </div>
-                <div class="grblock">
-                    <h3>Code Example:</h3>
-                </div>
-                    <pre>
-                        <code class="code">
-// (I'm just learning)  Narcissistic Numbers
-function narcissistic(value) {
-  let x = 0
-  let y = 0
-  if (value > 9 ){
-    x = value.toString().split('')
-    for(let i=0; i &lt; x.length; i++){
-      y += Math.pow(Number(x[i]), x.length)
-    }
-     if (y === value){
-       return true
-     } else {
-       return false
-     }
-   } else {
-     return true
-   }
-}
-                        </code>
-                        </pre>
-                <div class="grblock">
-                    <h3>Experience:</h3>
-                    <p>I have worked on several small projects.</p>
+              </nav>
+        </header>
+        <main>
+            <div id="contacts" class="contacts">
+                <img class="photo" src="./images/photo_il.jpg" alt="My photo">
+                <h1>IGOR LAGUTIN</h1>
+                <div>Front-end Developer </div>
 
+            </div>
+
+
+            <section class="about">
+                <h2>Contacts:</h2>
+                <ul style="line-height:2em; list-style-type: none;">
+                    <li><b>Address: </b>Gomel, Republic of Belarus</li>
+                    <li><b>Phone: </b> <a href="tel:+375-29-332-58-60">+375-29-332-58-60</a></li>
+                    <li><b>E-mail: </b><a href="mailto:igolllf@gmail.com"> igolllf@gmail.com</a></li>
+                    <li><b>GitHub: </b> <a href="https://github.com/igo-l"> https://github.com/igo-l</a></li>
+                </ul>
+                <hr>
+                    <p class="about__me">
+                        <h3>About me:</h3>
+                        I worked as a Lead Software Engineer. Now I am in charge of the sector of a public institution,
+                            but I decided to return to the profession of a developer.
+                            I was engaged in self-study, made my own projects.
+                            Developed ASP.NET projects with Microsoft SQL Server.
+                            I have basic knowledge of HTML, CSS and JavaScript. I want to improve them and start learning Angular.
+                            </p>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JS, C, C++, C#, ASP .Net</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>HTML/CSS</li>
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>Windows OS, Linux(Ubuntu), Android</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education">
+                    <div class="position">
+                        <h3>Sukhoi State Technical University of Gomel (electronic engineer, software engineer).
+                        </h3>
+                        <p class="name__position">Internet courses, Youtube courses and video.</p>
+                    </div>
                 </div>
-                <div class="grblock">
-                    <h3>Education:</h3>
-                    <p>Sukhoi State Technical University of Gomel (electronic engineer, software engineer).
-                        <br>Internet courses, Youtube courses and video.</p>
-                </div>
-                <div class="grblock">
-                    <h3>English:</h3>
-                    <p>A2 English level. I studied at school in English classes. I got level-placed at the university.
+            </section>
+
+            <section>
+                <h2>Code example</h2>
+ <pre>
+    <code class="code javascript">
+// Narcissistic Numbers
+function narcissistic(value) {
+ let x = 0
+ let y = 0
+  if (value > 9 ){
+   x = value.toString().split('')
+  for(let i=0; i &lt; x.length; i++){
+   y += Math.pow(Number(x[i]), x.length)
+  }
+  if (y === value){
+   return true
+  } else {
+  return false
+  }
+ } else {
+  return true
+ }
+}</code></pre>
+            </section>
+            <section class="languages">
+                <h2>Languages</h2>
+                <ul class="languages">
+                    <li>English [A2]</li>
+                    <p>I studied at school in English classes. I got level-placed at the university.
                         I practice a lot every day by reading and reviewing materials in English.
                     </p>
+                </ul>
+
+                <h2>Strengths</h2>
+                <ul class="languages">
+                    <li>Passionate and fast learning</li>
+                    <li>Stress tolerance in mind of the deadlines</li>
+                        I want to become a full stack developer.
+                </ul>
+            </section>
+
+            <div class="full__width__divider"></div>
+
+            <section id="experience" class="projects">
+                <div class="wrapper-title">
+
+                    <h3 class="titles" id="projects">Experience:</h3>
                 </div>
-            </main>
-            <hr>
-            <footer class="footer">
-            <div>
-                <a href="https://rs.school/js/"><img class="rslogo" src="./images/rssl.png" alt="rsSchool logo"></a>
-                <a href="https://github.com/igo-l"><img class="gitlogo" src="./images/ghl.png" alt="Github logo"></a>
+                <div class="project-description">
+                    <div>
+                        <h4 class="subtitles">Museum</h4>
+                    </div>
+                    <div>
+                        <a href="https://rolling-scopes-school.github.io/igo-l-JSFEPRESCHOOL/museum/" target="_blank">
+                            <img src="./images/Louvre.png" class="project-image" alt="Louvre Museum">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div>
+                        <h4 class="subtitles">Vertical slider</h4>
+                    </div>
+                    <div>
+                        <a href="https://rolling-scopes-school.github.io/igo-l-JSFEPRESCHOOL/vertical-slider/" target="_blank">
+                            <img src="./images/vertical-slider.png" class="project-image" alt="Vertical slider">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div>
+                        <h4 class="subtitles">Custom video player</h4>
+                    </div>
+                    <div>
+                        <a href="https://rolling-scopes-school.github.io/igo-l-JSFEPRESCHOOL/custom-video-player/" target="_blank">
+                            <img src="./images/custom-video-player.png" class="project-image" alt="custom-video-player">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    <footer>
+        <div class="">
+            <a href="https://rs.school/js/" ><img class="rs" src="./images/rssl.png" alt="rsSchool logo"></a>
+        </div>
+            <p class="copyright"> &ltigo-l&gt<br>2021</igo-l></p>
+            <div class="">
+                <a href="https://github.com/igo-l" ><img class="github" src="./images/ghl.png" alt="Github logo"></a>
             </div>
-            <hr>
-                <div style="text-align:center;">© Copyright 2021 by Igor Lagutin</div>
-            </footer>
+    </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
