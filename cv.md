@@ -19,8 +19,8 @@ I was engaged in self-study, made my own projects. Developed ASP.NET projects wi
 ___
 - C, C++, C#, ASP .Net
 - Microsoft SQL Server
-- HTML/CSS
-- Windows OS, Linux(Ubuntu), Android
+- HTML/CSS, JavaScript (in progress)
+- Windows OS, Linux, Android
 
 #### Code Example:
 ___
